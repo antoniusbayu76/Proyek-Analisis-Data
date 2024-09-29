@@ -25,6 +25,11 @@ ax.set_ylabel('Total Rentals')
 ax.set_title('Bike Rentals by Weather')
 ax.set_xticks([0, 1, 2, 3])  
 ax.set_xticklabels(['Clear', 'Mist', 'Light Rain', 'Heavy Rain'])
+y_ticks = range(0, int(weatherRental['cnt'].max()) + 1000, 1000)  # Adjust step size as needed
+ax.set_yticks(y_ticks)
+
+# Optionally format y-tick labels to include commas
+ax.set_yticklabels([f"{int(x):,}" for x in y_ticks])  # Format with commas
 st.pyplot(fig)
 
 # Group data by season and aggregate rental count
