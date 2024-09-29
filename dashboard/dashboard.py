@@ -24,7 +24,7 @@ ax.set_xlabel('Weather Condition')
 ax.set_ylabel('Total Rentals')
 ax.set_title('Bike Rentals by Weather')
 ax.set_xticks([0, 1, 2, 3])  
-ax.set_xticklabels(['Clear', 'Mist', 'Light Snow/Rain', 'Heavy Rain/Snow'])
+ax.set_xticklabels(['Clear', 'Mist', 'Light Rain', 'Heavy Rain'])
 st.pyplot(fig)
 
 # Group data by season and aggregate rental count
