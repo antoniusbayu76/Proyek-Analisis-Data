@@ -7,7 +7,7 @@ import seaborn as sns
 data = pd.read_csv('dashboard/data.csv')
 
 # Set the title of the dashboard
-st.title("Bike Sharing Dashboard")
+st.title("Bike Sharing Data Analysis")
 
 # Display dataset information
 st.write("### Dataset Overview")
