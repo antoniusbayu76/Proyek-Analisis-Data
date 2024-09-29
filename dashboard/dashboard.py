@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-data = pd.read_csv('main_data.csv')
+data = pd.read_csv('data.csv')
 
 # Set the title of the dashboard
 st.title("Bike Sharing Dashboard")
